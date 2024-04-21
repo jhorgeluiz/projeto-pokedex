@@ -119,7 +119,7 @@
         <h1 class="procure">Procure seu Pokemon</h1>
 
         <select class="digitepokem" name="pokemon" id="ipoke" placeholder="digite aqui">
-            <option value="" id="ipoke">Selecione aqui</option>
+            <option value="selecione aqui" id="ipoke">Selecione aqui</option>
             <option value="pikachu" id="ipoke">pikachu</option>
             <option value="bulbossauro" id="ipoke">bulbossauro</option>
             <option value="charizard" id="ipoke">charizard</option>
@@ -144,6 +144,12 @@
             let c = 'charizard'
             let e = 'esguitaruga'
             let pi = 'pidgey'
+            let v = 'selecione aqui'
+
+            if(camp === v) {
+                res.innerHTML = ''                 
+            }
+
             if(camp === p) {
                 res.innerHTML = `<img src="imagens/pikachu.png" alt=""> `                 
             }
