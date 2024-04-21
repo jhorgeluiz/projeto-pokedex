@@ -13,12 +13,12 @@
             position: relative;
             box-shadow: 1px 1px 5px black;
             width: 300px; 
-            height: 350px;   
+            height: 450px;   
             left: 25px;   
-            background-color: rgb(204, 2, 2);     
+            background-color: #cc0202;     
         }
        
-        div {
+        #res {  /* div principal */
             margin-top: 20px;
             border: 1px solid;
             position: relative;
@@ -27,16 +27,31 @@
             height: 190px;
             background-color: black;
             box-shadow: 1px 1px 5px black;
-            border: 25px solid rgb(189, 188, 188);
+            border: 25px solid #bdbcbc;
             border-bottom-left-radius: 30px;
         }
+           
+        #res1 {
+            margin-top: 5px;
+            text-align: center;
+        }
+        p {
+            background-color: black;
+            position: relative;
+            border: 10px solid #bdbcbc;
+            color: #bdbcbc;
+            margin-top: 0px;
+            width: 180px;
+            left: 50px;
+        }
+        
         header{
             display: inline-flex;
             position: relative;
             left: 25px;
             width: 300px;
             box-shadow: 1px 1px 5px black;
-            background-color: rgb(204, 2, 2);
+            background-color: #cc0202;
         }
         .grande{
             background-image: linear-gradient(to left, #0202ff, #5555d6 ) ;
@@ -46,7 +61,7 @@
             border-radius: 50px;
             border-style: none;  
             margin: 10px;   
-            border: 2px solid black;
+            border: 5px solid #bdbcbc;
         }
         .pequeno1{
             margin-right: 10px;
@@ -104,6 +119,7 @@
             width: 200px;
             height: 190px;
         }
+
         
     </style>
 </head>
@@ -133,6 +149,9 @@
         <div id="res">
             
         </div>
+        <div id="res1">
+            
+        </div>
     </section>
    
     <script>
@@ -147,27 +166,33 @@
             let v = 'selecione aqui'
 
             if(camp === v) {
-                res.innerHTML = ''                 
+                res.innerHTML = '' 
+                res1.innerHTML = ''                
             }
 
             if(camp === p) {
-                res.innerHTML = `<img src="imagens/pikachu.png" alt=""> `                 
+                res.innerHTML = `<img src="imagens/pikachu.png" alt=""> ` 
+                res1.innerHTML = `<p>Nome: Pikachu, <br> Altura: 0.4m,<br> peso: 6.0kg,<br> Categoria: Rato,<br> Poder: Raio do Trovão </p>`                
             }
 
             if(camp === b) {
-                res.innerHTML = `<img src="imagens/bulbossauro.jpeg" alt="">`                 
+                res.innerHTML = `<img src="imagens/bulbossauro.jpeg" alt="">`
+                res1.innerHTML = `<p>Nome: Bulbossauro, <br> Altura: 0.7m,<br> peso: 6.9kg,<br> Categoria: Semente,<br> Poder: super crescimento </p>`                 
             }
 
             if(camp === c) {
-                res.innerHTML = `<img src="imagens/charizard.jpeg" alt="">`                 
+                res.innerHTML = `<img src="imagens/charizard.jpeg" alt="">`
+                res1.innerHTML = `<p>Nome: Charizard, <br> Altura: 1.7m,<br> peso: 90.5kg,<br> Categoria: Chama,<br> Poder: Chama </p>`                
             }
 
             if(camp === e) {
-                res.innerHTML = `<img src="imagens/esguitaruga.jpeg" alt="">`                 
+                res.innerHTML = `<img src="imagens/esguitaruga.jpeg" alt="">` 
+                res1.innerHTML = `<p>Nome: Esguitaruga, <br> Altura: 0.5m,<br> peso: 9.0kg,<br> Categoria: tartaruga,<br> Poder: Jato de d'agua </p>`                
             }
 
             if(camp === pi) {
-                res.innerHTML = `<img src="imagens/pidgey.jpeg" alt="">`                 
+                res.innerHTML = `<img src="imagens/pidgey.jpeg" alt="">`    
+                res1.innerHTML = `<p>Nome: Pidgey, <br> Altura: 0.3m,<br> peso: 1.8kg,<br> Categoria: pássaro,<br> Poder: olhos aguçados </p>`             
             }
         }
 
